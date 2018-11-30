@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9c991e3f-872d-4257-b0d0-42f7f5997e8f}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>app.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <InterpreterId />
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <PythonWsgiHandler>{StartupModule}.wsgi_app</PythonWsgiHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.py" />
+    <Compile Include="bin\wfastcgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\Test.pyproj.FileListAbsolute.txt" />
+    <Content Include="requirements.txt" />
+    <Content Include="static\css\docs.min.css" />
+    <Content Include="static\css\signup.css" />
+    <Content Include="static\js\canvas-to-blob.min.js" />
+    <Content Include="static\js\jquery-1.11.2.js" />
+    <Content Include="static\js\jquery.fileupload-image.js" />
+    <Content Include="static\js\jquery.fileupload-process.js" />
+    <Content Include="static\js\jquery.fileupload-ui.js" />
+    <Content Include="static\js\jquery.fileupload.js" />
+    <Content Include="static\js\jquery.iframe-transport.js" />
+    <Content Include="static\js\jquery.ui.widget.js" />
+    <Content Include="static\js\load-image.all.min.js" />
+    <Content Include="static\js\signIn.js" />
+    <Content Include="static\js\signUp.js" />
+    <Content Include="static\Uploads\75c02900-92ce-4783-a034-7a48d6624d43.png" />
+    <Content Include="static\Uploads\9f399cb0-54d8-46f7-bec4-15b259653935.png" />
+    <Content Include="static\Uploads\b588b8df-1e14-48f8-9a23-26664d96ea0b.png" />
+    <Content Include="templates\addWish.html" />
+    <Content Include="templates\dashboard.html" />
+    <Content Include="templates\error.html" />
+    <Content Include="templates\index.html" />
+    <Content Include="templates\signin.html" />
+    <Content Include="templates\signup.html" />
+    <Content Include="templates\userHome.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin" />
+    <Folder Include="obj\" />
+    <Folder Include="obj\Debug" />
+    <Folder Include="static\" />
+    <Folder Include="static\css" />
+    <Folder Include="static\js" />
+    <Folder Include="static\Uploads" />
+    <Folder Include="templates" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
