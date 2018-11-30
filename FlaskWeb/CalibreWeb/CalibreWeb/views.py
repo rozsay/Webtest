@@ -21,9 +21,9 @@ def contact():
     """Renders the contact page."""
     return render_template(
         'contact.html',
-        title='Contact',
+        title='Kapcsolat a fejlesztőkkel.',
         year=datetime.now().year,
-        message='Your contact page.'
+        message=''
     )
 
 @app.route('/about')
@@ -31,7 +31,7 @@ def about():
     """Renders the about page."""
     return render_template(
         'about.html',
-        title='About',
+        title='Calibre leírás.',
         year=datetime.now().year,
-        message='Your application description page.'
+        message=''
     )
